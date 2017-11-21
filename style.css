@@ -103,3 +103,13 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 320px) {
+  body {
+    padding: 20px 30px;
+  }
+
+  h2 {
+    transform: none;
+  }
+}
