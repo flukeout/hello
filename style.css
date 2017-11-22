@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 
+
 body {
   background-color: #f7f6f5;
   font-family: "Lato", sans-serif;
@@ -11,6 +12,12 @@ body {
   color: #444;
   padding: 60px;
   font-weight: 400;
+}
+
+@media print {
+ /* All your print styles go here */
+
+
 }
 
 .page {
