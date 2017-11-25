@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
-
-
 
 body {
   background-color: #f7f6f5;
@@ -14,12 +11,6 @@ body {
   font-weight: 400;
 }
 
-@media print {
- /* All your print styles go here */
-
-
-}
-
 .page {
   max-width: 800px;
   margin: 0 auto;
@@ -28,7 +19,7 @@ body {
 p {
   margin: 0 0 20px 0;
   color: rgba(0,0,0,.5);
-  line-height: 140%;
+  line-height: 145%;
 }
 
 ul {
@@ -50,16 +41,16 @@ h1 ,h2, h3 {
   font-family: "Merriweather", serif;
 }
 
-.thumbs {
-  position: absolute;
-  width: 40px;
-  transform: translateY(-5px) translateX(10px);
-}
-
 h1 {
   font-size: 34px;
   font-weight: 700;
   margin-bottom: 20px;
+}
+
+h1 .thumbs {
+  position: absolute;
+  width: 40px;
+  transform: translateY(-5px) translateX(10px);
 }
 
 h2 {
@@ -114,6 +105,7 @@ h2 + .job {
 a {
   color: dodgerblue;
   text-decoration: none;
+  font-size: inherit;
 }
 
 a:hover {
@@ -127,5 +119,35 @@ a:hover {
 
   h2 {
     transform: none;
+  }
+}
+
+@media print {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+    border-bottom: solid 2px #ddd;
+    transform: none;
+    padding-bottom: 15px;
+  }
+
+  h2 span {
+    background: transparent;
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  hr {
+    margin: 15px 0;
   }
 }
