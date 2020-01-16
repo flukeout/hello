@@ -3,53 +3,280 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Luke Pacholski - Resume</title>
+    <title>Hi, I'm Luke Pacholski</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.png">
+    <script src="image-viewer.js"></script>
+    <script src="face.js"></script>
   </head>
 
   <body>
     <div class="page">
       <h1>Hi, I'm Luke Pacholski <img class="thumbs" src="images/thumbs-up.svg" /></h1>
       <div class="about-me">
+        <div title="Hello, this is me." class="bio-photo"></div>
         <p>
-          I like the old Google emojis and writing HTML, CSS &amp; JS in the service of fun, attractive and intuitive web experiences. I'm at my best when applying a mix of creative and technical skills to solve challenging problems. Trying out new ideas, experimenting, building prototypes&mdash;that's my jam! Don't get me wrong, when it's time for the final touches, I can still agnozie over the exact pixel width of that border. Those I've worked with say I'm great at giving feedback and my secret power is filing tens of QA issues in a single, devastating swoop.
+          Equal parts designer and coder,  I love writing <strong>HTML</strong>, <strong>CSS</strong> &amp; <strong>JS</strong> in service of fun, attractive and intuitive web experiences. I'm at my best when applying a mix of creative and technical skills to solve challenging problems with a small, focused team.
         </p>
-          <p>
-            You can <a href="mailto:luke.pacholski@gmail.com">email me</a>
-          or find me on <a href="https://github.com/flukeout">Github</a> &amp; <a href="https://twitter.com/flukeout">Twitter</a>.
+        <p>
+          Those I've worked with say I'm great at giving feedback and my secret power is filing tons of QA issues in a single, devastating swoop.
         </p>
-        <h4>Some fun side-projects</h4>
-        <ul>
-          <li><a href="https://flukeout.github.io/">CSS Diner</a> - a game for learning CSS selectors</li>
-          <li><a href="https://flukeout.github.io/pixeldrift/">Pixeldrift</a> - a racing game built with HTML, CSS &amp; JS</li>
-        </ul>
+        <p>
+          You can <a target="_blank" href="mailto:luke.pacholski@gmail.com">email me</a>
+          or find me on <a href="https://github.com/flukeout">GitHub</a> &amp; <a href="https://twitter.com/flukeout">Twitter</a>.
+        </p>
+      </div>
+
+      <h2><span>Projects</span></h2>
+
+      <section class="projects">
+
+        <div class="project">
+          <a href="thimble.html" class="thumbnail thimble" title="Read about the Thimble Code Editor project">
+            <div class="nav-helper">Read more&hellip;</div>
+          </a>
+          <h3 class="title">Thimble Code Editor</h3>
+          <span class="type">Work Project &middot; Mozilla Foundation</span>
+          <p class="description">A web-based code editor for learners &amp; educators alike.</p>
+          <div class="links">
+            <a class="primary" href="thimble.html">Read more&hellip;</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <a href="http://cssdiner.com/" class="thumbnail css-diner" target="_blank" title="Check out CSS Diner">
+            <div class="nav-helper">Check it out</div>
+          </a> 
+          <h3 class="title">CSS Diner</h3>
+          <span class="type">Personal Project</span>
+          <p class="description">A fun learning tool that has helped over 700,000 people brush up on CSS selectors.</p>
+          <div class="links">
+            <a class="external" target="_blank" href="http://cssdiner.com/">Check it out</a> 
+            <span class="divider">&middot;</span>
+            <a class="external" target="_blank" href="https://github.com/flukeout/css-diner">GitHub repo</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <a href="https://flobotron.itch.io/paddle-force" title="Check out Paddle Force" target="_blank" class="thumbnail paddle-force">
+            <div class="nav-helper">Check it out</div>
+          </a>
+          <h3 class="title">Paddle Force</h3>
+          <span class="type">Personal Project &middot; Collaboration</span>
+          <p class="description">A fast-paced browser game with gamepad support. Uses an open-source 2D physics engine to power DOM-based visuals.</p>
+          <div class="links">
+            <a target="_blank" class="external" href="https://flobotron.itch.io/paddle-force">Check it out</a>
+            <span class="divider">&middot;</span>
+            <a target="_blank" class="external" href="https://www.youtube.com/watch?v=it_0RYxf3OE">Watch someone else play</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <a href="onscreen.html" class="thumbnail onscreen" title="Read about the OnScreen project">
+            <div class="nav-helper">Read more&hellip;</div>
+          </a>
+          <h3 class="title">OnScreen</h3>
+          <span class="type">Work Project &middot; Vibes Media</span>
+          <p class="description">Web-based interactive slideshow builder and player for use in venues and on TV.</p>
+          <div class="links">
+            <a href="onscreen.html">Read more&hellip;</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <a class="external thumbnail polypal" target="_blank" href="https://flukeout.github.io/PolyPal/" title="Check out PolyPal">
+            <div class="nav-helper">Check it out</div>
+          </a> 
+          <h3 class="title">PolyPal</h3>
+          <span class="type">Personal Project - Prototype</span>
+          <p class="description">A web-based 2D art program for make low-poly style SVG illustrations.</p>
+          <div class="links">
+            <a class="external" target="_blank" href="https://flukeout.github.io/PolyPal/">Check it out</a> 
+            <span class="divider">&middot;</span>
+            <a class="external" target="_blank"  href="https://www.youtube.com/watch?v=tkd6rHTtUnE">Watch a Demo</a>
+            <span class="divider">&middot;</span>
+            <a class="external" target="_blank" href="https://github.com/flukeout/PolyPal">GitHub repo</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <a target="_blank" class="thumbnail activestate" href="https://platform.activestate.com" title="Check out the ActiveState Platform">
+            <div class="nav-helper">Check it out</div>
+          </a>
+          <h3 class="title">ActiveState Platform</h3>
+          <span class="type">Work Project &middot; ActiveState</span>
+          <p class="description">A SaaS platform for building customized open-source language runtimes.</p>
+          <div class="links">
+            <a class="external" target="_blank" href="https://platform.activestate.com">Check it out</a>
+          </div>
+        </div>
+
+      </section>
+
+      <h2><span>Fun Stuff</span></h2>
+
+      <section class="projects list-mode">
+
+        <div class="project">
+          <a class="external thumbnail goodbye" target="_blank" href="http://flukeout.com/bye-cassie/">
+            <div class="nav-helper">Check it out</div>
+          </a>
+          <h3 class="title">Bye, Cassie!</h3>
+          <span class="type">Fun Work Project</span>
+          <p class="description">An interactive going away card for our colleague, Cassie.</p>
+          <div class="links">
+            <a class="external" target="_blank" href="http://flukeout.com/bye-cassie/">Say good-bye</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <a class="external thumbnail pixelracer" target="_blank" href="https://flukeout.github.io/pixeldrift/">
+            <div class="nav-helper">Check it out</div>
+          </a>
+          <h3 class="title">Pixel Drift Club</h3>
+          <span class="type">Personal Project</span>
+          <p class="description">Race your own ghost & compete on the global leaderboard.</p>
+          <div class="links">
+            <a class="external" target="_blank" href="https://flukeout.github.io/pixeldrift/">Take the wheel</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <a class="thumbnail typer external" target="_blank" href="http://flukeout.com/examples/typer/">
+            <div class="nav-helper">Check it out</div>
+          </a>
+          <h3 class="title">Alphabet Race</h3>
+          <span class="type">Personal Project</span>
+          <p class="description">Type the alphabet as fast as you can.</p>
+          <div class="links">
+            <a class="external" target="_blank" href="http://flukeout.com/examples/typer/">Test yourself</a>
+          </div>
+
+        </div>
+      </section>
+
+      <h2><span>Illustration</span></h2>
+
+      <div class="illustrations">
+
+        <img
+          src="images/illustrations/hey-buds.png" 
+          alt="Illustration of an iPod and headphones greeting each other."
+          caption="The main thing to note about this one is that George Takei posted it on his Facebook wall."
+        />
+
+        <img
+          src="images/illustrations/shield.png" 
+          alt="Illustration of a shield and assorted fantasy items." 
+          caption="Logo to commemorate a fun-filled trip that was screen-printed onto a bandana." 
+        />
+
+        <img 
+          src="images/illustrations/eatarama_logo.jpg" 
+          alt="Illustration of a Vegas-style sign with the words Eat-a-Rama."
+          caption="Logo for a social restaurant review website."
+        />
+
+        <img 
+          class="transparent"
+          src="images/illustrations/taco-fox-circle.png" 
+          alt="Illustration of a Fox in a Taco with a Mozilla flag."
+          caption="A sticker for a Mozilla Foundation event in Austin, Texas where breakfast tacos are popular."
+        />
+
+        <img 
+          src="images/illustrations/whack-a-mole.jpeg" 
+          alt="Illustration of a character playing whack-a-mole with Email."
+          caption="Part of a series of illustrations related to onboarding the Mozilla Foundation. Expect lots of emails!"
+        />
+
+        <img 
+          src="images/illustrations/sad-coffee.png" 
+          alt="Illustration of a sad cup crying coffee tears."
+          caption="A coffee cup having a rough morning."
+        />
+
+        <img 
+          thumbnail
+          src="images/illustrations/play-icon.gif" 
+          alt="A stylized Play Video icon."
+          caption="Icons for a concept for an rebrand ActiveState."
+        />
+
+        <img 
+          src="images/illustrations/takeshi-kitano-thumbnail.png" 
+          alt="Illustration of a portrait of actor Takeshi Kitano."
+          caption="Portrait of actor Takeshi Kitano, drawn with pencils."
+        />
+
+        <img 
+          src="images/illustrations/vibes-dodgeball.png" 
+          alt="Illustration of a mobile phone playing dodgeball."
+          caption="Made for t-shirts used by the dodgeball team at Vibes."
+        />
+
+        <img 
+          src="images/illustrations/flowers.png" 
+          alt="Illustration of a mountain peak surrounded by flowers."
+          caption="Made this for a wedding program cover. Incorporates elements meaningful to the couple."
+        />
+
+        <img 
+          src="images/illustrations/theme-privacy.png" 
+          alt="Illustration of a person sitting at a computer screen that has a giant eye."
+          caption="Created for use alongside the Mozilla Foundation's content about online privacy."
+        />
+
+      </div>
+
+      <div class="viewer">
+        <a title="View the next image" class="previous viewer-nav">&larr;</a>
+        <a title="View the previous image" class="next viewer-nav">&rarr;</a>
+        <a title="Close the image viewer" class="close-viewer">&times;</a>
+        
+        <div class="image-wrapper">
+          <img />
+          <p class="caption"></p>
+        </div>
       </div>
 
       <h2><span>Jobs</span></h2>
 
       <div class="job">
-        <h3 class="role">Coding Design Engineer &rarr; <a href="https://www.mozilla.org/en-US/foundation/">The Mozilla Foundation</a></h3>
-        <div class="time">September 2013 - Present &middot; About 4 years</div>
+        <h3 class="role">Head of UX at <a target="_blank" href="https://activestate.com">ActiveState</a></h3>
+        <div class="time">My current role &middot; Started on January 2018</div>
         <div class="description">
           <p>
-            As a member of the design team I'm involved in all aspects of the design process, including research, brainstorming, wireframing, prototyping and writing front-end code. I've also assisted with international user research trips and helped coordinate the Web Literacy floor at the 2017 edition of the <a href="https://mozillafestival.org/">Mozilla Festival</a>.
+            I joined ActiveState to help build the <a target="_blank" href="https://platform.activestate.com">ActiveState Platform</a>, which turns ActiveState's core business of building custom language distributions into a self-serve offering that can reach a much wider audience. I've been involved in the design, planning and implementation of The Platform from day one and perform a wide variety of tasks in my day to day work, like&hellip;
           </p>
-          <p>
-            Most of my time here has been focused on buildling tools that help people be creative on the web. My most recent and best work is on the relaunch of <a href="https://thimble.mozilla.org/en-US/">Thimble</a>, a web-based code editor. I'm responsible for all of Thimble's design, UX and have created many of the starter projects on the home pager. Like all my work here, Thimble is open-source, and I've helped many contributors from around the world add features and fix bugs. Oh, and I'm also first to get all of the support emails.
-          </p>
+          <ul>
+            <li>Working with various project managers plan &amp; design new platform features</li>
+            <li>Adapting the platform to user feedback &amp; and site metrics</li>
+            <li>Wireframign and prototyping new features</li>
+            <li>Assisting the Dev Team with implementation</li>
+            <li>Planning and scheduling work within 2-week sprints with the Front-end Team</li>
+            <li>Finding, filing and fixing many, many, many bugs.</li>
+          </ul>
         </div>
-        <h4>Things I made here&hellip;</h4>
-        <ul>
-          <li><a href="https://thimble.mozilla.org/en-US/">Thimble</a></li>
-          <li><a href="https://youtu.be/F9Fp0XqagOY?t=451">Appmaker Demo Video</a> featuring Bobby</li>
-        </ul>
       </div>
 
       <div class="job">
-        <h3 class="role">UX Designer &rarr; <a href="https://www.vibes.com/">Vibes</a></h3>
-        <div class="time">January 2010 - October 2013 &middot; Almost 3 years</div>
+        <h3 class="role">Coding Design Engineer at <a href="https://www.mozilla.org/en-US/foundation/">The Mozilla Foundation</a></h3>
+        <div class="time">About 4 years &middot; September 2013 &rarr; December 2017 </div>
+        <div class="description">
+          <p>
+            As a member of the design team I was involved in all aspects of the design process, including research, brainstorming, wireframing, prototyping and writing front-end code. I've also assisted with international user research trips and helped coordinate the Web Literacy floor at the 2017 edition of the <a href="https://mozillafestival.org/">Mozilla Festival</a>.
+          </p>
+          <p>
+            Most of my time here has been focused on buildling tools that help people be creative on the web. My most recent and best work is on the relaunch of <a href="thimble.html">Thimble</a>, a web-based code editor. I'm responsible for all of Thimble's design, UX and have created many of the starter projects on the home pager. Like all my work here, Thimble is open-source, and I've helped many contributors from around the world add features and fix bugs. Oh, and I'm also first to get all of the support emails.
+          </p>
+        </div>
+      </div>
+
+      <div class="job">
+        <h3 class="role">UX Designer at <a href="https://www.vibes.com/">Vibes</a></h3>
+        <div class="time">Almost 3 years &middot; January 2010 &rarr; October 2013</div>
         <div class="description">
           <p>
             I helped design, implement and test a wide variety of interfaces in our web-based mobile marketing platform. I was involved with all aspects of our design process, from initial concept sketches to working with our developers on markup and front-end code.
@@ -59,17 +286,15 @@
           </p>
           <h4>Things I made there&hellip;</h4>
           <ul>
-            <li><a href="https://www.youtube.com/watch?v=CO9H0IbLaXg">Page builder UI demo</a></li>
-            <li><a href="http://flukeout.com/on-screen-ui/">On-Screen Platform Overview</a></li>
-            <li><a href="http://flukeout.com/vibes-onscreen-remote-controller/">On-Screen Remote Controller</a></li>
+            <li><a href="https://www.youtube.com/watch?v=CO9H0IbLaXg">Mobile Page Builder (Watch a Demo)</a></li>
+            <li><a href="onscreen.html">On-Screen Platform</a></li>
           </ul>
-
         </div>
       </div>
 
       <div class="job">
-        <h3 class="role">Lead Graphic &amp; Web Designer, Co-founder &rarr; Zeep Mobile</h3>
-        <div class="time">September 2008 - Feb 2010 &middot; About 1.5 years</div>
+        <h3 class="role">Lead Graphic &amp; Web Designer, Co-founder at Zeep Mobile</h3>
+        <div class="time">About 1.5 years &middot; September 2008 &rarr; Feb 2010 </div>
         <div class="description">
           <p>
             This was our small start-up focused on allowing developers to add SMS functionality to their websites. I was in charge of everything visual including our branding, business cards, websites and white papers. I also managed our online advertising campaigns and created landing pages to attract new clients.
@@ -84,8 +309,8 @@
       </div>
 
       <div class="job">
-        <h3 class="role">Graphic &amp; Web Designer &rarr; <a href="https://www.activestate.com/">ActiveState</a></h3>
-        <div class="time">Jan 2006 - Aug 2008 &middot; 2 years 8 months</div>
+        <h3 class="role">Graphic &amp; Web Designer at <a href="https://www.activestate.com/">ActiveState</a></h3>
+        <div class="time">About 2.5 years &middot; Jan 2006 &rarr; Aug 2008 </div>
         <div class="description">
           <p>
             In my second job, as the sole designer at the company for most of my time there, I was involved in a wide range of activities. My biggest contribution was redesingning the company website and overhauling the UX of the online shopping process. In addition to maintaining and updating all of the web properties, I also designed all other print materials like business cards, letterhead, T-shirts, conference banners &amp; magazine ads.
@@ -100,15 +325,15 @@
       </div>
 
       <div class="job">
-        <h3 class="role">Web Interface Designer &rarr; <a href="https://bestbuy.ca">Best Buy</a></h3>
-        <div class="time">Jan 2006 - Dec 2006 &middot; 1 year</div>
+        <h3 class="role">Web Interface Designer at <a target="_blank" href="https://bestbuy.ca">Best Buy</a></h3>
+        <div class="time">1 year &middot; Jan 2006 &rarr; Dec 2006</div>
         <div class="description">
           <p>
             This was my first real job in the industry and it was a really great place to start. Most of my work focused on creating promotional web pages and microsites that lived within the Future Shop website. I also had a lot of fun creating flash animations to promote the launches of the XBOX 360, Sony PSP and Sirius Satellite Radio, which I've linked below. Additionally, I updated the Future Shop homepage with the newest specials on a weekly basis, a role known only as "Banner Duty". Sadly, not much of this work remains.
           </p>
           <h4>Things I made there&hellip;</h4>
           <ul>
-            <li><a href="http://flukeout.com/flash-banners/">Promotional Flash Animations</a></li>
+            <li><a href="http://flukeout.com/flash-banners/">Promotional Flash Animations</a> (Flash Player Required)</li>
           </ul>
         </div>
       </div>
@@ -118,8 +343,8 @@
       <h2><span>Education</span></h2>
 
       <div class="job">
-        <h3 class="role">Bachelors in Communication &rarr; <a href="https://www.sfu.ca/">Simon Fraser University</a></h3>
-        <div class="time">1998 - 2004 &middot; 6 years</div>
+        <h3 class="role">Bachelors in Communication from <a href="https://www.sfu.ca/">Simon Fraser University</a></h3>
+        <div class="time">Graduated in 2004</div>
         <div class="description">
           <p>
             Completed a Co-op degree, which included two 8 month work terms: the first as a Technical Writer at Future Shop and the second as an English teacher in Nagoya, Japan.
@@ -127,6 +352,8 @@
         </ul>
         </div>
       </div>
+
+      <a class="top-link" href="#">&uarr; Top</a>
 
     </div>
   </body>

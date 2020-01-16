@@ -1,0 +1,113 @@
+.project-page {
+    max-width: 1000px;
+}
+
+.project-page h1 {
+    margin-top: 15px;
+    padding: 0;
+    margin-bottom: 0;
+    flex: 1;
+}
+
+.project-page .heading {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.project-page .project-type {
+    font-size: 18px;
+    color: rgba(0,0,0,.35);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Lato";
+    flex: 1;
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: 4px;
+}
+
+.project-page .project-type a {
+    color: inherit;
+    border-bottom: solid 2px rgba(0,0,0,.35);
+    padding-bottom: 1px;
+}
+
+.project-page .project-type a:hover {
+    border-bottom: solid 2px rgba(0,0,0,.6);
+    color: rgba(0,0,0,.6);
+    padding-bottom: 1px;
+}
+
+@media (max-width: 640px) {
+  .project-page .heading {
+    display: block;
+  }
+  .project-page .heading h1 {
+    margin-bottom: 5px;
+  }
+}
+
+.project-page .wide-image-wrapper {
+    margin: 0 0 45px 0;
+    position: relative;
+    border: solid 1px rgba(0,0,0,.04);
+}
+
+.project-page .wide-image-wrapper img {
+    display: block;
+}
+
+.project-page .two-columns {
+    display: flex;
+    flex-direction: row;
+    margin: 0 -30px;
+}
+
+.project-page .two-columns .column {
+    margin: 0 30px;
+}
+
+.project-page .two-columns .column:first-child {
+    flex: 2;
+}
+
+.project-page .two-columns .column:last-child {
+    flex: 1;
+}
+
+@media (max-width: 640px) {
+  .project-page .two-columns {
+    display: block;
+  }
+
+  ul {
+    margin-left: 25px;
+  }
+}
+
+.project-page h3 {
+    margin-bottom: 10px;
+}
+
+.project-page p + h3 {
+    margin-top: 40px;
+}
+
+.project-page h2 {
+    margin-bottom: 45px;
+    margin-top: 25px;
+}
+
+.project-page p {
+    margin-bottom: 30px;
+}
+
+.project-page ul {
+    padding-left: 0;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+.project-page ul li {
+    margin-bottom: 8px;
+}
