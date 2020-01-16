@@ -92,6 +92,8 @@ ul li {
   background-blend-mode: luminosity;
   opacity: .6;
   transform: rotate(3deg);
+  position: relative;
+  top: 5px;
 }
 
 h1 ,h2, h3 {
