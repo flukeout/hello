@@ -249,7 +249,14 @@ a:not(.thumbnail):hover {
   border-radius: 4px;
   background-repeat: no-repeat;
   position: relative;
+  overflow: hidden;
+  transition: transform .25s ease-in-out;
 }
+
+.project .thumbnail:hover {
+  transform: scale(1.02);
+}
+
 
 .project .thumbnail:hover .nav-helper {
   opacity: 1;
@@ -311,7 +318,6 @@ a:not(.thumbnail):hover {
   color: white;
   background-size: cover;
   background-position: top-left;
-  /*box-shadow: 0 0 0 6px rgba(0, 123, 255, .5);*/
 }
 
 .thumbnail.pixelracer {
