@@ -62,9 +62,25 @@ ul {
 }
 
 .links .divider {
-  margin: 0 7px;
+  margin: 0 5px;
   color: rgba(0,0,0,.2);
   font-weight: bold;
+}
+
+.internal .links a:first-child {
+  background-image: url(images/icons/book.svg);
+  background-size: 24px;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: left 2px;
+}
+
+.external .links a:first-child {
+  background-image: url(images/icons/external.svg);
+  background-size: 21px;
+  padding-left: 26px;
+  background-repeat: no-repeat;
+  background-position: left 2px;s
 }
 
 .links a:first-child {
@@ -166,8 +182,6 @@ a {
   font-size: inherit;
 }
 
-
-
 a:not(.thumbnail):hover {
   text-decoration: none;
   padding-bottom: 1px;
@@ -241,13 +255,33 @@ a:not(.thumbnail):hover {
   opacity: 1;
 }
 
-.project .thumbnail .nav-helper span {
-  margin-left: 10px;
-  border: solid 2px white;
-  padding: 1px 3px;
-  border-radius: 30px;
-  transform: rotate(-45deg);
-  font-weight: bold;
+.project .thumbnail .link-type {
+  position: absolute;
+  display: none ;
+  width: 40px;
+  height: 40px;
+  top: -15px;
+  right: -15px;
+  background: white;
+  border: solid 1px #999;
+  border-radius: 50%;
+}
+
+.project .thumbnail .nav-helper .label {
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.project.internal .thumbnail .nav-helper .label {
+  background-image: url(images/icons/book-white.svg);
+  background-size: 24px;
+  padding-left: 32px;
+}
+
+.project.external .thumbnail .nav-helper .label {
+  background-image: url(images/icons/external-white.svg);
+  background-size: 21px;
+  padding-left: 28px;
 }
 
 .project .thumbnail .nav-helper {
@@ -287,6 +321,7 @@ a:not(.thumbnail):hover {
   color: white;
   background-size: cover;
   background-position: top-left;
+  /*box-shadow: 0 0 0 6px rgba(0, 123, 255, .5);*/
 }
 
 .thumbnail.pixelracer {
