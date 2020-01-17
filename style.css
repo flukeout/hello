@@ -352,7 +352,7 @@ a:not(.thumbnail):hover {
 .thumbnail.onscreen {
   background-image: url(images/thumbnails/onscreen.png);
   background-color: white;
-  border: solid 1px #d0c8c0;
+  border: solid 1px #f1ebe5;
   background-size: cover;
   background-position: top left;
 }
@@ -361,7 +361,7 @@ a:not(.thumbnail):hover {
   background-image: url(images/thumbnails/polypal.png);
   background-color: white;
   background-size: cover;
-  border: solid 1px #d0c8c0;
+  border: solid 1px #f1ebe5;
   background-position: left;
 }
 
@@ -395,7 +395,11 @@ a:not(.thumbnail):hover {
   border-radius: 2px;
   cursor: pointer;
   transition: transform .1s ease-out;
-  border-radius: 2px;
+  border-radius: 4px;
+}
+
+.illustrations img.white-bg {
+  border: solid 1px #f1ebe5;
 }
 
 @media (max-width: 640px) {
