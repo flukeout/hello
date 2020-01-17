@@ -70,7 +70,7 @@ ul {
 .internal .links a:first-child {
   background-image: url(images/icons/book.svg);
   background-size: 24px;
-  padding-left: 30px;
+  padding-left: 31px;
   background-repeat: no-repeat;
   background-position: left 2px;
 }
@@ -78,7 +78,7 @@ ul {
 .external .links a:first-child {
   background-image: url(images/icons/external.svg);
   background-size: 21px;
-  padding-left: 26px;
+  padding-left: 25px;
   background-repeat: no-repeat;
   background-position: left 2px;s
 }
@@ -255,18 +255,6 @@ a:not(.thumbnail):hover {
   opacity: 1;
 }
 
-.project .thumbnail .link-type {
-  position: absolute;
-  display: none ;
-  width: 40px;
-  height: 40px;
-  top: -15px;
-  right: -15px;
-  background: white;
-  border: solid 1px #999;
-  border-radius: 50%;
-}
-
 .project .thumbnail .nav-helper .label {
   background-position: left;
   background-repeat: no-repeat;
@@ -287,6 +275,7 @@ a:not(.thumbnail):hover {
 .project .thumbnail .nav-helper {
   position: absolute;
   color: white;
+  text-shadow: 0 0 2px rgba(0,0,0,1);
   border-radius: 4px;
   top: 0;
   left: 0;
