@@ -287,6 +287,7 @@ a:not(.thumbnail):hover {
 .project .thumbnail .nav-helper {
   position: absolute;
   color: white;
+  border-radius: 4px;
   top: 0;
   left: 0;
   font-weight: bold;
