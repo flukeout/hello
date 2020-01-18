@@ -1,4 +1,4 @@
-let viewerVisible = true,                  // If true, will open first image in gallery
+let viewerVisible = false,                  // If true, will open first image in gallery
     gallerySelector = ".illustrations",     // The wrapper element around the thumbnails
     imageIndex,
     viewerEls = {};
