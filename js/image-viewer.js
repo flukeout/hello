@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function() {
         lastTouch.y = e.touches[0].clientY;
 
         let xDelta = firstTouch.x - lastTouch.x;
-
         root.style.setProperty('--image-offset',  "translateX(" + (-xDelta/4) +  "px)");
     });
 
@@ -48,9 +47,9 @@ document.addEventListener("DOMContentLoaded", function() {
         let xDelta = firstTouch.x - lastTouch.x;
         let yDelta = firstTouch.y - lastTouch.y;
         root.style.setProperty('--image-offset',  "translateX(0px)");
-        if ( Math.abs(yDelta < 100) ){
-            if ( xDelta < -200 ) { previousImage() }
-            if ( xDelta > 200)         { nextImage() }
+        if ( Math.abs(yDelta < 50) ){
+            if ( xDelta < -100 ) { previousImage() }
+            if ( xDelta > 100)         { nextImage() }
         }
     });
 
