@@ -87,7 +87,7 @@
   }
 
   .image-viewer .close-viewer {
-    left: calc(50% - 35px);
+    right: calc(50% - 35px);
     bottom: 20px;
     top: auto;
     padding: 20px;
