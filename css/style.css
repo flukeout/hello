@@ -182,7 +182,7 @@ a {
   font-size: inherit;
 }
 
-a:not(.thumbnail):hover {
+a:not(.thumbnail):not(.close-viewer):hover {
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: solid 2px dodgerblue;
