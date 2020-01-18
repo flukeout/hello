@@ -1,10 +1,11 @@
-let viewerVisible = false,                  // If true, will open first image in gallery
+let viewerVisible = true,                  // If true, will open first image in gallery
     gallerySelector = ".illustrations",     // The wrapper element around the thumbnails
     imageIndex,
     viewerEls = {};
 
-let firstTouchX = 0;
-let lastTouchX = 0;
+let firstTouch = {};
+let lastTouch = {};
+let root = document.documentElement;
 
 document.addEventListener("DOMContentLoaded", function() { 
     viewerEls.bodyEl =            document.querySelector("body");
@@ -30,16 +31,27 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     viewerEls.viewerEl.addEventListener("touchstart", function(e){
-        firstTouchX = e.touches[0].clientX;
+        firstTouch.x = e.touches[0].clientX;
+        firstTouch.y = e.touches[0].clientY;
     });
 
     viewerEls.viewerEl.addEventListener("touchmove", function(e){
-        lastTouchX = e.touches[0].clientX;
+        lastTouch.x = e.touches[0].clientX;
+        lastTouch.y = e.touches[0].clientY;
+
+        let xDelta = firstTouch.x - lastTouch.x;
+
+        root.style.setProperty('--image-offset',  "translateX(" + (-xDelta/4) +  "px)");
     });
 
-
     viewerEls.viewerEl.addEventListener("touchend", function(e){
-        console.log(firstTouchX, lastTouchX);
+        let xDelta = firstTouch.x - lastTouch.x;
+        let yDelta = firstTouch.y - lastTouch.y;
+        root.style.setProperty('--image-offset',  "translateX(0px)");
+        if ( Math.abs(yDelta < 100) ){
+            if ( xDelta < -200 ) { previousImage() }
+            if ( xDelta > 200)         { nextImage() }
+        }
     });
 
 
