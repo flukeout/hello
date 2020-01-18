@@ -68,7 +68,7 @@ ul {
 }
 
 .internal .links a:first-child {
-  background-image: url(images/icons/book.svg);
+  background-image: url(../images/icons/book.svg);
   background-size: 24px;
   padding-left: 31px;
   background-repeat: no-repeat;
@@ -76,7 +76,7 @@ ul {
 }
 
 .external .links a:first-child {
-  background-image: url(images/icons/external.svg);
+  background-image: url(../images/icons/external.svg);
   background-size: 21px;
   padding-left: 25px;
   background-repeat: no-repeat;
@@ -100,7 +100,7 @@ ul li {
   height: 160px;
   float: right;
   border-radius: 50%;
-  background-image: url(images/faces/top-left.jpg);
+  background-image: url(../images/faces/top-left.jpg);
   background-size: 240%;
   margin-left: 40px;
   background-position: 47.5% 55%;
@@ -257,7 +257,6 @@ a:not(.thumbnail):hover {
   transform: scale(1.02);
 }
 
-
 .project .thumbnail:hover .nav-helper {
   opacity: 1;
 }
@@ -268,13 +267,13 @@ a:not(.thumbnail):hover {
 }
 
 .project.internal .thumbnail .nav-helper .label {
-  background-image: url(images/icons/book-white.svg);
+  background-image: url(../images/icons/book-white.svg);
   background-size: 24px;
   padding-left: 32px;
 }
 
 .project.external .thumbnail .nav-helper .label {
-  background-image: url(images/icons/external-white.svg);
+  background-image: url(../images/icons/external-white.svg);
   background-size: 21px;
   padding-left: 28px;
 }
@@ -313,7 +312,7 @@ a:not(.thumbnail):hover {
 }
 
 .thumbnail.thimble {
-  background-image: url(images/thumbnails/thimble.png);
+  background-image: url("../images/thumbnails/thimble.png");
   background-color: #2D9961;
   color: white;
   background-size: cover;
@@ -321,14 +320,14 @@ a:not(.thumbnail):hover {
 }
 
 .thumbnail.pixelracer {
-  background-image: url(images/thumbnails/pixelracer.png);
+  background-image: url(../images/thumbnails/pixelracer.png);
   background-color: #222222;
   background-size: cover;
   background-position: top-left;
 }
 
 .thumbnail.goodbye {
-  background-image: url(images/thumbnails/goodbye.png);
+  background-image: url(../images/thumbnails/goodbye.png);
   background-color: #99B3D5;
   background-size: cover;
   border: none;
@@ -336,21 +335,21 @@ a:not(.thumbnail):hover {
 }
 
 .thumbnail.css-diner {
-  background-image: url(images/thumbnails/css-diner.png);
+  background-image: url(../images/thumbnails/css-diner.png);
   background-color: #2E2A23;
   background-size: cover;
   background-position: center;
 }
 
 .thumbnail.paddle-force {
-  background-image: url(images/thumbnails/paddle-force-cover.png);
+  background-image: url(../images/thumbnails/paddle-force-cover.png);
   background-color: #AE4C9A;
   background-size: cover;
   background-position: top;
 }
 
 .thumbnail.onscreen {
-  background-image: url(images/thumbnails/onscreen.png);
+  background-image: url(../images/thumbnails/onscreen.png);
   background-color: white;
   border: solid 1px #f1ebe5;
   background-size: cover;
@@ -358,7 +357,7 @@ a:not(.thumbnail):hover {
 }
 
 .thumbnail.polypal {
-  background-image: url(images/thumbnails/polypal.png);
+  background-image: url(../images/thumbnails/polypal.png);
   background-color: white;
   background-size: cover;
   border: solid 1px #f1ebe5;
@@ -366,14 +365,14 @@ a:not(.thumbnail):hover {
 }
 
 .thumbnail.typer {
-  background-image: url(images/thumbnails/typer.png);
+  background-image: url(../images/thumbnails/typer.png);
   background-color: #DA85E0;
   background-size: cover;
   background-position: center;
 }
 
 .thumbnail.activestate {
-  background-image: url(images/thumbnails/activestate.png);
+  background-image: url(../images/thumbnails/activestate.png);
   background-color: #2479EB;
   background-size: cover;
   background-position: top;
@@ -415,95 +414,6 @@ a:not(.thumbnail):hover {
 
 .illustrations img:hover {
   transform: scale(1.04);
-}
-
-.viewer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,.9);
-  align-items: center;
-  justify-content: center;
-  display: none;
-}
-
-.viewer .close-viewer {
-  position: fixed;
-  right: 20px;
-  top: 20px;
-  padding: 0 20px;
-  font-size: 50px;
-  cursor: pointer;
-  opacity: .4;
-  color: white;
-}
-
-.viewer a.close-viewer:hover {
-  opacity: 1;
-  border: none;
-}
-
-.viewer.show {
-  display: flex;
-}
-
-.viewer .image-wrapper {
-  width: 500px;
-  height: 500px;
-  margin: 0 auto;
-  max-width: 80vw;
-  position: relative;
-  top: -20px;
-}
-
-.viewer img {
-  display: block;
-  width: 100%;
-}
-
-.viewer .caption {
-  margin-top: 15px;
-  color: rgba(255,255,255,.5);
-  text-align: center;
-  padding: 0 15px;
-}
-
-.viewer-nav {
-  position: fixed;
-  bottom: calc(50% - 40px);
-  padding: 20px;
-  font-size: 50px;
-  cursor: pointer;
-  opacity: .4;
-  color: white;
-}
-
-a.viewer-nav:hover {
-  opacity: 1;
-  border: none;
-  padding: 20px;
-}
-
-.viewer-nav.next {
-  right: 50px;
-}
-
-.viewer-nav.previous {
-  left: 50px;
-}
-
-@media (max-width: 640px) {
-  .viewer-nav.next {
-    right: 50px;
-    bottom: 20px;
-  }
-
-  .viewer-nav.previous {
-    left: 50px;
-    bottom: 20px;
-  }
 }
 
 .projects.list-mode .project {

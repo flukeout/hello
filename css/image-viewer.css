@@ -1,0 +1,95 @@
+.image-viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.9);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.image-viewer .close-viewer {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 0 20px;
+  font-size: 50px;
+  cursor: pointer;
+  opacity: .4;
+  color: white;
+}
+
+.image-viewer a.close-viewer:hover {
+  opacity: 1;
+  border: none;
+}
+
+.image-viewer.show {
+  display: flex;
+}
+
+.image-viewer .image-wrapper {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  max-width: 80vw;
+  position: relative;
+  top: -20px;
+}
+
+.image-viewer img {
+  display: block;
+  width: 100%;
+}
+
+.image-viewer .caption {
+  margin-top: 15px;
+  color: rgba(255,255,255,.5);
+  text-align: center;
+  padding: 0 15px;
+}
+
+.image-viewer .viewer-nav {
+  position: fixed;
+  bottom: calc(50% - 40px);
+  padding: 20px;
+  font-size: 50px;
+  cursor: pointer;
+  opacity: .4;
+  color: white;
+}
+
+.image-viewer a.viewer-nav:hover {
+  opacity: 1;
+  border: none;
+  padding: 20px;
+}
+
+.image-viewer .viewer-nav.next {
+  right: 50px;
+}
+
+.image-viewer .viewer-nav.previous {
+  left: 50px;
+}
+
+@media (max-width: 640px) {
+  .image-viewer .viewer-nav.next {
+    right: 30px;
+    bottom: 20px;
+  }
+
+  .image-viewer .viewer-nav.previous {
+    left: 30px;
+    bottom: 20px;
+  }
+
+  .image-viewer .close-viewer {
+    left: calc(50% - 35px);
+    bottom: 20px;
+    top: auto;
+    padding: 20px;
+  }
+}
