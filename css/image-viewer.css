@@ -1,7 +1,3 @@
-:root {
-  --image-offset: 0px;
-}
-
 .image-viewer {
   position: fixed;
   top: 0;
@@ -46,7 +42,6 @@
 .image-viewer img {
   display: block;
   width: 100%;
-  transform: var(--image-offset);
 }
 
 .image-viewer .caption {

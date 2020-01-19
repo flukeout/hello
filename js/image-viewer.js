@@ -38,18 +38,14 @@ document.addEventListener("DOMContentLoaded", function() {
     viewerEls.viewerEl.addEventListener("touchmove", function(e){
         lastTouch.x = e.touches[0].clientX;
         lastTouch.y = e.touches[0].clientY;
-
-        let xDelta = firstTouch.x - lastTouch.x;
-        root.style.setProperty('--image-offset',  "translateX(" + (-xDelta/4) +  "px)");
     });
 
     viewerEls.viewerEl.addEventListener("touchend", function(e){
         let xDelta = firstTouch.x - lastTouch.x;
         let yDelta = firstTouch.y - lastTouch.y;
-        root.style.setProperty('--image-offset',  "translateX(0px)");
         if ( Math.abs(yDelta < 50) ){
             if ( xDelta < -100 ) { previousImage() }
-            if ( xDelta > 100)         { nextImage() }
+            if ( xDelta > 100)   { nextImage() }
         }
     });
 
